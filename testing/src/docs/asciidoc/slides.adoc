@@ -1,0 +1,121 @@
+= Software Testing
+Tim Riemer <tim@riemer.mobi>
+
+:imagesdir: images
+:sourcedir: snippets
+
+==  Definition
+[quote, ANSI/IEEE 1059 standard]
+A process of analyzing a software item to detect the differences between existing and required conditions (that is defects/errors/bugs) and to evaluate the features of the software item.
+
+== Wer testet im Idealfall?
+[options="step"]
+* Software Tester / QA Engineer
+* Software Developer
+* Projektleiter / PM
+* Endbenutzer
+
+== Ab wann kann man testen?
+[options="step"]
+* Testing beginnt schon in der Planungsphase
+ ** Analyse und Verifikation von Anforderungen
+* Reviews des Designs / Entwurfs
+* Wasserfall-Modell:
+ ** Testing formal erst in der Testing Phase
+* Inkrementelle-Modelle (Agile):
+  ** Testing bei / nach jedem Durchlauf
+
+== Arten
+[options="step"]
+* manuelle Tests (Manual Testing)
+ ** mit Hilfe von Testplänen, Testszenarien und Testfällen
+ ** "erkundenes Testen" (Exploratory Testing)
+* automatisierte Tests (Automation Testing)
+ ** mit Hilfe von Skripten und weiterer Software
+ ** wiederholbar, schnell
+ ** Load Tests, Performance Tests, Stress Tests
+ ** erhöht die Testabdeckung und Genauigkeit
+ ** spart Zeit und Geld im Vergleich zu manuellem Testen
+
+== Methoden: Black-Box Testing
+[options="step"]
+* Tester hat keine Kenntnis von der zu grundeliegenden Architektur
+* und keinen Zugriff auf Source Code
+* Testen über das UI durch Eingaben und Analyse der Ausgaben
+* + Trennung Benutzer / Entwickler Perspektive
+* + Tester braucht keine tiefen Kenntnisse
+* - Ineffizient
+* - wenig Abdeckung
+* - nur grobe Tests, da nicht spezielle Bereiche getestet werden können
+
+== Methoden: White-Box Testing
+[options="step"]
+* Tester braucht Wissen über Interna der Software (Source Code, ...)
+* + Codeoptimierung
+* + Codeminimierung (weniger Bugs möglich)
+* + hohe Abdeckung möglich
+* - höhere Kosten, da Tester erfahren sein muss
+* - spezielle Tools nötig für Debugging und Codeanalyse
+
+== Methoden:  Grey-Box Testing
+[options="step"]
+*  Tester hat "beschränktes" Wissen über die Software (kein Zugriff auf Source Code)
+* z.B. Zugriff auf die Datenbank um bessere Tests zu erstellen
+* + kombiniert Vorzüge der vorherigen Methoden
+* + Tests aus Benutzersicht
+* - weniger Abdeckung als beim White-Box Testing
+* - redundante Tests möglich
+
+== Level: Functional Testing
+[options="step"]
+* Art von Black-Box Testing
+* beschreibt das "Was" ein System macht
+* Funktionen werden mit Eingaben versorgt
+* die Ausgabe wird ausgewertet
+* Die Tests laufen in einem voll-integrierten System (quasi Produktivbedingungen)
+
+== Level: Unit Testing
+[options="step"]
+* Testen von kleinen Units des Source Codes (Entwickler o. White-Box Tester)
+* Unit = kleinste testbare Einheit
+* Fast
+* Independent
+* Repeatable
+* Self Validating
+* Timely
+
+== Level: Integration Testing
+[options="step"]
+* Art von Black-Box Testing
+* Testen von verschiedenen Softwaremodulen in Kombination
+* überprüft Anforderungen auf Funktion, Performance und Zuverlässigkeit
+* Top-down / Bottom-up als verbreitete Varianten
+
+== Level: Acceptance Testing
+[options="step"]
+* überprüft, ob das System den Anforderung der Spezifikationen entspricht
+* d.h. Geschäftslogik und auch UI werden getestet
+* oft in einer Domain Sprache geschriebene Testabläufe
+* User Acceptance Tests
+
+== Level: weitere ...
+[options="step"]
+* System Testing
+* Regression Testing
+* ... Alpha, Beta, Security, Portability, ...
+
+== Dokumentation
+[options="step"]
+* Test Plan
+ ** beschreibt die Strategie wie getestet wird inkl. Zeitpläne und Limitierungen
+ ** umfasst Liste der Test Cases, der zu testenden Features, Risiken, ...
+* Test Scenario
+ ** beschreibt ein einem Satz welcher Bereich einer Software getestet wird
+ ** umfasst meistens mehrere Test Cases
+ ** oft auch mit Test Case gleichbedeutend genutzt
+* Test Case
+ ** werden zur Testabdeckung einer Software geschrieben
+ ** beinhalten Schritte, Vorbedingungen und Eingaben die benötigt werden
+ ** aber auch erwartetes Resultat und tatsächliches Resultat
+
+== Fragen?

@@ -1,0 +1,120 @@
+= Scrum
+Tim Riemer <tim@riemer.mobi>
+
+:imagesdir: images
+:sourcedir: snippets
+
+== Agile Manifesto
+
+[verse, http://agilemanifesto.org/]
+--
+*Individuals and interactions* over processes and tools
+*Working software* over comprehensive documentation
+*Customer collaboration* over contract negotiation
+*Responding to change* over following a plan
+
+That is, while there is value in the items on the right,
+we value the items on the left more.
+--
+
+== Overview
+
+Scrum is an iterative and incremental agile software developing framework for managing product development and processes.
+
+image::ScrumLargeLabelled.png[]
+
+== Roles: Product Owner
+[options="step"]
+* responsible for ROI
+* product vision
+* final arbiter for requirements questions
+* single wringable neck
+* focuses more on the WHAT, than on the HOW
+* makes business decisions for the team
+
+== Roles: Scrum Development Team
+[options="step"]
+* cross-functional
+* self-organized
+* attemps to build potentially shippable product increment every sprint
+* 7 +/- 2
+* collaborates
+* commited
+* generalizing specialists
+* delivers value in small chunks
+* manages quality
+
+== Roles: Scrum Master
+[options="step"]
+* no management authority
+* no project manager
+* protects the team from interruptions / impediments
+* facilitates the process
+* teaches people how to use Scrum
+* enforces timeboxes
+
+== Artifacts: Product Backlog
+[options="step"]
+* prioritized
+* contains Product Backlog Items (PBI), no tasks
+	** user stories / epics
+	** use cases
+* anyone can add items, but PO prioritizes them
+
+== Artifacts: Sprint Backlog
+image::sprintbacklog.jpg[]
+[options="step"]
+* committed  PBIs to do in the Sprint
+* Backlog Items
+	** What
+* Tasks
+	** How
+
+== Artifacts: BurnDown Chart
+image::burndownchart.jpg[BurnDown Chart]
+
+== Meetings: Sprint Planning
+[options="step"]
+* PO and SDT agree to the Sprint goals
+* PBI accepted by the SDT will be part of the Sprint Backlog
+* top item is taken and divided into tasks
+* estimates are made
+* initial list of tasks for Sprint Backlog
+* timeboxed: 4h for a two week Sprint
+
+== Meetings: Daily Scrum
+[options="step"]
+* 15 minute stand up for the SDT once a day
+* SDT members report to each other
+	** what did I do yesterday
+	** what will I do today
+	** what impedes me
+* PO allowed, but only SDT members are allowed to talk
+
+== Meetings: Sprint Review
+[options="step"]
+* demo of potentially shippable product to PO and anyone who is interested (Stakeholders, Customers)
+* PO declares which items are accepted
+* feedback for emerging requirements
+
+== Meetings: Sprint Retrospective
+[options="step"]
+* SDT meeting to adopt own process
+* SDT takes ownership of their process
+* Feedback to each other
+	** what went well
+	** what could be improved
+
+== Meetings: Backlog Grooming
+[options="step"]
+* look ahead into next PBIs
+* clarifing PBIs
+* break bigger PBI (Epic) into smaller user stories
+* find dependencies 
+
+== Questions?
+
+== PIG and CHICKEN
+image::chicken-pigs-cartoon.png[]
+
+== *_Thanks!_*

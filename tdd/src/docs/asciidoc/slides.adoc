@@ -1,0 +1,75 @@
+= Test-Driven Development (TDD)
+Tim Riemer <tim@riemer.mobi>
+
+:imagesdir: images
+:sourcedir: snippets
+
+==  Test-Pyramide
+image::AgilePyramid.png[Pyramid]
+
+== Unittests: FIRST Akronym
+[options="step"]
+* Fast
+* Independent
+* Repeatable
+* Self Validating
+* Timely
+
+== Einführung TDD
+[options="step"]
+* Grundprinzip: Test vor der Implementierung schreiben
+* => man macht sich erst Gedanken wie eine Komponente benutzt wird
+* => danach implementiert man die Komponente
+* TDD ist eine Test- und eine Design-Technik:
+	** Komponenten sind einfach zu testen
+	** Komponenten sind einfach zu erweitern
+
+== TDD Zyklus
+[options="step"]
+* [red]#RED#
+	** Test schreiben der fehlschlägt
+* [green]#GREEN#
+	** Funktionalität implementieren damit der Test gelingt
+	** Fokus auf Funktion, nicht auf Code-Qualität
+	** Nur soviel Code, wie für Test nötig
+* [blue]#REFACTOR#
+	** Verbesserung der Code-Qualität
+
+== TDD Zyklus
+image::cycle.png[TDD Cycle]
+
+== Vorteile durch Test-First
+[options="step"]
+* Unittests fallen nicht unter den Tisch
+* Code besser testbar
+* Software-Architektur evolvierbar
+* keine Angst vor Refactorings
+* stabiler, korrekter Code
+
+== Vorbehalte gegenüber Test-First
+[options="step"]
+* Unittests brauchen zu viel Zeit?
+	** Test zur eigentlich Implementierung schreiben dauert etwas länger
+	** langfristig aber geringere Wartungskosten
+* Unittests brauchen zuviel Code?
+	** Verhältnis Testcode zu Implementierung ca. 1:1
+	** Tests sind Sicherheitsnetz
+	** Tests dienen als Low-Level Dokumentation
+* Unittests sind schwer zu implementieren?
+	** JA!
+	** aber es ist alles Gewohnheit / Übung
+
+==  Testing: Bugs
+image::bugs.jpg[Bugs]
+
+==  Testing: Pyramide Kosten
+image::pyramid.png[Pyramid]
+
+==  Testing: Kosten
+image::costs.jpg[Costs]
+
+== Coding Kata: BowlingGame
+
+== Fragen?
+
+== *_AUSPROBIEREN!_*
